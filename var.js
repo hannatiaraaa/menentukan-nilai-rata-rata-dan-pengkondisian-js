@@ -36,4 +36,18 @@ buttonCek.addEventListener("click", function cek(e) {
     }
     document.getElementById("demo").value = hasil.toFixed(2);
     console.log("IP, Kumulatif " + hasil.toFixed(2));
+
+    var keterangan = "";
+    if(hasil.toFixed(2) > 0 && hasil.toFixed(2) <= 100) {
+        if(hasil.toFixed(2) >= 85) {
+            keterangan = "Selamat Anda lulus dengan nilai A";
+        } else if(hasil.toFixed(2) >= 75 && hasil.toFixed(2) < 85) {
+            keterangan = "Selamat Anda lulus dengan nilai B";
+        } else {
+            keterangan = "Anda tidak lulus, jangan menyerah ulang semester depan";
+        }
+    } else {
+        keterangan = "Masukkan data dengan benar!";
+    }
+    document.getElementById("keterangan").innerHTML = keterangan;
 });
