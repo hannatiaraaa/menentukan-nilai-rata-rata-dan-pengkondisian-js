@@ -1,0 +1,97 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Javascript.</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                margin: 10%;
+            }
+        </style>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h3>
+                    Task : buat satu kolom lagi dibawah kolom nilai Rata-rata,
+                    dimana kolom tersebut dapat menghasilkan nilai string
+                    "selamat anda lulus dengan nilai A" jika pada kolom hasil
+                    Rata-rata nilai nya sama dengan atau lebih dari 80, dan
+                    kondisi kedua "selamat anda lulus dengan nilai B" jika nilai
+                    Rata-rata kurang dari 85 atau min. nilai sama dengan 75, dan
+                    selain nilai tersebut maka "anda tidak lulus, jangan
+                    menyerah ulang semester depan"
+                </h3>
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label>Pengantar Bisnis</label>
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="nilaiBisnis"
+                                step="0.01"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label>Pengantar Akuntansi I</label>
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="nilaiAkuntansi"
+                                step="0.01"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label>Pengantar Ekonomi Mikro</label>
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="nilaiMikro"
+                                step="0.01"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label>Matematika Ekonomi I</label>
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="nilaiMatematika"
+                                step="0.01"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label>Hukum dalam Bisnis</label>
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="nilaiDalamBis"
+                                step="0.01"
+                            />
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="cek">
+                            Cek Rata-rata
+                        </button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Hasil Rata-rata</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="demo"
+                            disabled
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
